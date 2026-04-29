@@ -81,13 +81,6 @@ body[data-language="en"] .language-thumb {
   transform: translateX(100%);
 }
 
-.language-icon {
-  width: 13px;
-  height: 13px;
-  fill: currentColor;
-  opacity: 1;
-}
-
 .language-option {
   position: relative;
   min-width: 54px;
