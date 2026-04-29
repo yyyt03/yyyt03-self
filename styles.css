@@ -69,8 +69,8 @@ body {
   display: grid;
   place-items: center;
   border-radius: 999px;
-  background: #1d1d1d;
-  color: #ffffff;
+  background: linear-gradient(180deg, #121212 0%, #242424 100%);
+  color: #fcfaf7;
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.16);
   transform: translateX(0);
   transition: transform 220ms ease;
@@ -85,7 +85,7 @@ body[data-language="en"] .language-thumb {
   width: 13px;
   height: 13px;
   fill: currentColor;
-  opacity: 0.96;
+  opacity: 1;
 }
 
 .language-option {
@@ -104,7 +104,8 @@ body[data-language="en"] .language-thumb {
 }
 
 .language-option.is-active {
-  color: #ffffff;
+  color: #fcfaf7;
+  font-weight: 600;
 }
 
 .intro-copy {
