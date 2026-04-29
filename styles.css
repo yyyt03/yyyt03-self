@@ -34,6 +34,7 @@ body {
 }
 
 .profile-card {
+  position: relative;
   width: min(100%, 980px);
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(240px, 320px);
@@ -42,6 +43,35 @@ body {
   background: var(--card-bg);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+}
+
+.language-switch {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  background: rgba(245, 243, 241, 0.92);
+}
+
+.language-option {
+  min-width: 56px;
+  padding: 8px 12px;
+  border: 0;
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.language-option.is-active {
+  background: #1d1d1d;
+  color: #ffffff;
 }
 
 .intro-copy {
@@ -105,12 +135,17 @@ h1 {
 
   .profile-card {
     gap: 40px;
-    padding: 36px 26px;
+    padding: 72px 26px 36px;
     grid-template-columns: 1fr;
   }
 
   .avatar-panel {
     order: -1;
+  }
+
+  .language-switch {
+    top: 18px;
+    right: 18px;
   }
 
   .avatar-frame {

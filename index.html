@@ -10,38 +10,62 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body data-language="zh">
   <main class="page-shell">
     <section class="profile-card" aria-label="个人简介">
+      <div class="language-switch" aria-label="Language switch">
+        <button class="language-option is-active" type="button" data-lang-button="zh">中文</button>
+        <button class="language-option" type="button" data-lang-button="en">EN</button>
+      </div>
       <div class="intro-copy">
-        <p class="eyebrow">Personal page</p>
-        <h1>嘿，我是 yyyt03。</h1>
-        <p>
-          我是一名计算机相关方向的学生，平时写代码，也会把兴趣放进项目里。
-          我喜欢把抽象的想法做成能运行、能展示、能继续迭代的东西。
-        </p>
-        <p>
-          这页会作为我的个人入口，保留一份简洁的自我介绍。
-          这里先不放外链，只留下描述和一点我正在靠近的方向：
-          交互体验、工具开发，以及把想法快速落地。
-        </p>
-        <p>
-          如果你是偶然路过，大概能在这里看到一个偏安静、偏直接、
-          更在意实现质量的人。
-        </p>
+        <p
+          class="eyebrow"
+          data-i18n="eyebrow"
+          data-zh="个人页面"
+          data-en="Personal page"
+        >个人页面</p>
+        <h1
+          data-i18n="heading"
+          data-zh="嘿，我是 yyyt03。"
+          data-en="Hi, I'm yyyt03."
+        >嘿，我是 yyyt03。</h1>
+        <p
+          data-i18n="paragraph-1"
+          data-zh="我是一名计算机相关方向的学生，平时写代码，也会把兴趣放进项目里。我喜欢把抽象的想法做成能运行、能展示、能继续迭代的东西。"
+          data-en="I'm a student in a computing-related field. I write code regularly and tend to turn my interests into projects. I like taking abstract ideas and shaping them into things that run, ship, and keep improving."
+        >我是一名计算机相关方向的学生，平时写代码，也会把兴趣放进项目里。我喜欢把抽象的想法做成能运行、能展示、能继续迭代的东西。</p>
+        <p
+          data-i18n="paragraph-2"
+          data-zh="这页会作为我的个人入口，保留一份简洁的自我介绍。这里先不放外链，只留下描述和一点我正在靠近的方向：交互体验、工具开发，以及把想法快速落地。"
+          data-en="This page serves as my personal entry point: a compact introduction, without external links for now. What stays here is a short description and the kind of work I'm moving toward: interaction design, tool building, and turning ideas into usable results quickly."
+        >这页会作为我的个人入口，保留一份简洁的自我介绍。这里先不放外链，只留下描述和一点我正在靠近的方向：交互体验、工具开发，以及把想法快速落地。</p>
+        <p
+          data-i18n="paragraph-3"
+          data-zh="如果你是偶然路过，大概能在这里看到一个偏安静、偏直接、更在意实现质量的人。"
+          data-en="If you just happened to land here, you'll probably find someone fairly quiet, fairly direct, and serious about implementation quality."
+        >如果你是偶然路过，大概能在这里看到一个偏安静、偏直接、更在意实现质量的人。</p>
       </div>
       <aside class="avatar-panel" aria-label="头像区域">
         <div class="avatar-frame">
           <img
             src="https://github.com/yyyt03.png"
             alt="yyyt03 的头像"
+            data-i18n-alt="avatar-alt"
+            data-zh-alt="yyyt03 的头像"
+            data-en-alt="Portrait of yyyt03"
             width="280"
             height="280"
           >
         </div>
-        <p class="avatar-caption">描述保留，链接稍后补充。</p>
+        <p
+          class="avatar-caption"
+          data-i18n="avatar-caption"
+          data-zh="描述保留，链接稍后补充。"
+          data-en="Description stays for now. Links will be added later."
+        >描述保留，链接稍后补充。</p>
       </aside>
     </section>
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
